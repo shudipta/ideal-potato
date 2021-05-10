@@ -12,6 +12,17 @@ There are some scripts helpful to use in regarding aspects.
     && sudo mv cp+.sh /usr/local/bin/cp+
 
   $ cp+ --help
+  c++14 - builds and runs a c++ source file specified by the only argument
+
+  Usage: c++14 <file_path>
+
+  arg:
+  <file_path>         specifies a c++ source file path that must have '.cpp' as extension
+
+  options:
+  -h, --help          show brief help
+      --14            use -std=c++14 as compiler, default
+      --11            use -std=c++11 as compiler
   ```
 
 - ***rlog:*** Generate a release log file from based on the commits on top of the last tag.
@@ -22,6 +33,13 @@ There are some scripts helpful to use in regarding aspects.
     && sudo mv rlog.sh /usr/local/bin/rlog
 
   $ rlog --help
+  rlog.sh - generate a release log file from based on the commits on top of the last tag
+
+  rlog.sh [options]
+
+  options:
+  -h, --help          show brief help
+  -v                  show the contents of the log file
   ```
 
 - ***mkc:*** Update your `minikube` and `kubectl` version.
@@ -33,4 +51,12 @@ There are some scripts helpful to use in regarding aspects.
     && rm ./mkc.sh
 
   $ mkc --help
+  mk-kc.sh - update minikube and kubectl
+
+  mk-kc.sh [options]
+
+  options:
+  -h, --help          show brief help
+      --minikube      minikube version that will be used for minikube (default is v1.0.0)
+      --kubectl       kubectl version that will be used for kubectl (default is from https://storage.googleapis.com/kubernetes-release/release/stable.txt)
   ```
