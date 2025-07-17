@@ -13,6 +13,7 @@ function show_help() {
     echo "-h, --help          show brief help"
     echo "-v                  show the contents of the log file"
     echo "--chart-path, -c    path to the helm chart"
+    echo "--tag-build         whether to build the tag and push release commit with tag. no value required"
 }
 
 while test $# -gt 0; do
